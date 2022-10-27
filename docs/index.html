@@ -1,22 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Simple Syntax Highlighter</title>
 
-  <style>
-    html, body {
-      height: 100%;
-      background-color: #fecc00;
-    }
-  </style>
-
+  <link rel="stylesheet" href="./styles/style.css">
 </head>
+
 <body>
-  <div>
+  <header>
     <h1>Simple Syntax Highlighter</h1>
+    <h3>Two input colours, nearly infinite theme options.</h3>
+  </header>
+
+  <div id="examples">
+    <div id="color-pickers">
+      <div>
+        <div>Text Colour</div>
+        <p>The base color for hue rotation that makes up the rest of the code body theme:</p>
+        <input id="text-color-picker" type="color" id="head" name="head" value="#000000">
+      </div>
+
+      <div>
+        <div>Overlay Colour</div>
+        <p>A semi transparent mixed blend overlay that ties the theme and background together:</p>
+        <input id="overlay-color-picker" type="color" id="body" name="body" value="#000000">
+      </div>
+    </div>
+
+    <div class="syntax-highlighter-outer-wrapper" id="source-example">
+      <div class="syntax-highlighter-inner-wrapper">
+        <pre
+          class="syntax-highlighter-pre"><code class="syntax-highlighter-code"></code><div class="syntax-highlighter-filters"></div></pre>
+      </div>
+      <div class="syntax-highlighter-overlay"></div>
+    </div>
+
+    <div class="syntax-highlighter-outer-wrapper" id="usage-example">
+      <div class="syntax-highlighter-inner-wrapper">
+        <pre
+          class="syntax-highlighter-pre"><code class="syntax-highlighter-code"></code><div class="syntax-highlighter-filters"></div></pre>
+      </div>
+      <div class="syntax-highlighter-overlay"></div>
+    </div>
+
+    <div class="syntax-highlighter-outer-wrapper" id="css-example">
+      <div class="syntax-highlighter-inner-wrapper">
+        <pre
+          class="syntax-highlighter-pre"><code class="syntax-highlighter-code"></code><div class="syntax-highlighter-filters"></div></pre>
+      </div>
+      <div class="syntax-highlighter-overlay"></div>
+    </div>
   </div>
+
+  <script src="./js/load-samples.js" type="module"></script>
 </body>
+
 </html>

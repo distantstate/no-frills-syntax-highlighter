@@ -5,10 +5,7 @@
   "author": "nverba",
   "license": "MIT",
   "private": false,
-  "repository": "git@github.com:distantstate/laminar.git",
   "scripts": {
-    "start": "npx http-server -o ./projects/examples/index.html",
-    "dev": "npx http-server -o ./projects/examples/index.html & npx tailwindcss -o ./projects/examples/style/tailwind.css --watch"
+    "start": "npx http-server -o ./docs/index.html"
   }
 }
- 
