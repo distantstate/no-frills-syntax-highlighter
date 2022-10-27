@@ -1,4 +1,4 @@
-import { createSimpleSyntaxHighlighter } from "../../src/simple-syntax-highlighter.js";
+import { createSimpleSyntaxHighlighter } from "../libs/simple-syntax-highlighter.js";
 import javascriptFilters from "../sample-filters/javascript.filters.js";
 
 const syntaxHighlighter = createSimpleSyntaxHighlighter(javascriptFilters);
